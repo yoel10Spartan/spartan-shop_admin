@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --surface-color: #fff;
+    --curve: 40;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , 280px);
+    gap: 1rem;
+    margin: 0rem 1vw;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .card {
+    position: relative;
+    display: block;
+    height: 420px;
+    overflow: hidden;
+    text-decoration: none;
+    background: #fff;
+    padding-top: 20px;
+    border-radius: 5px;
+  }
+  
+  .card_container_img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .card__image {      
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(--curve) * 1px);    
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+
+  .color_admin {
+      border: 1px solid #CCD1D1;
+
+  }
+  
+  .card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+  }
+  
+  .card__arc path {
+    fill: var(--surface-color);
+    
+  }       
+  
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+  
+  
+  .card__title {
+    font-size: 1em;
+    margin: 0 0 1em;
+    color: #2C3E50;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .card__tagline {
+    display: block;
+    margin: 0 0 5px 0;
+    font-family: "MockFlowFont";  
+    font-size: 1em; 
+    color: #566573;  
+  }
+  
+  .card__status {
+    font-size: .9em;
+    color: #34495E;
+  }
+  
+  .card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #D7BDCA;
+    font-family: "MockFlowFont";   
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }    
+
+  .offert{
+    width: 75px;
+    margin: 8px 0 8px 0;
+    padding: 0 0 0 15px;
+    background-color: #CCD1D1;
+    border-radius: 10px;
+  }
+
+  .card__price__offert {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .product_inf_user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: #E5E7E9;
+    height: 70px;
+  }
+
+  .product_inf_user .removed_user {
+    width: 150px;
+    font-size: 10px;
+    color: red;
+    text-align: center;
+  }
+
+  .product_inf_user .img_administrator_product {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+
+  .product_inf_user .name_administrator_product {
+    margin-left: 15px;
+    font-size: 15px;
+    color: #273746;
+  }
+
+  .check_add_slider {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+  }
+
+  .check_add_slider label {
+    font-size: 13px;
+    margin-right: 10px;
+  }
+
+  @media (max-width: 1125px){
+    .cards {
+      margin: -2rem 5vw;
+    }
+  }

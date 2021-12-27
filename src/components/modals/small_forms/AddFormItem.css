@@ -1,0 +1,12 @@
+.form_addFormItem input {
+    width: 60%;
+    outline: none;
+    border: none;
+    background-color: #B2BABB;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.input_add_item.error_set {
+    border: 2px solid red;
+}

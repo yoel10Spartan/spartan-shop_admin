@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+
+.list_container {
+    display: flex;
+    position: relative;
+}
+
+.list_files {
+    overflow: scroll;
+    max-height: 80px;
+    position: relative;
+    min-width: 300px;
+    max-width: 300px;
+    padding: 15px;
+    border: 1px solid #566573;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.list_files::-webkit-scrollbar {
+    display: none;   
+}
+
+.list_files ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.list_files hr {
+    margin-top: 5px;
+}
+
+ 
+.list_files .item {
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+.item li {
+    font-size: 12px;
+}
+
+.list_files ul {
+    list-style: none;
+}
+
+.list_files .item {
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+  
+.delete {
+    border: 1px solid #E59866;
+    padding: 5px;
+    color: #E59866;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+  
+.delete:hover {
+    background: #E59866;
+    color: #fff;
+}
+
+.list_files .item__title {
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+}
+ 

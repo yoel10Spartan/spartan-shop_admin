@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.droparea {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: 1px dashed gray;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    align-items: center;
+}
+.hover {
+    color: red;
+    border: 1px dashed red;
+}
+.valid {
+    color: #fff;
+    background-color: green;
+    border: 1px solid green;
+}
+.invalid {
+    color: #fff;
+    background-color: red;
+    border: 1px solid red;
+}
+
+.img__dragdrop {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    padding: 2px;
+}

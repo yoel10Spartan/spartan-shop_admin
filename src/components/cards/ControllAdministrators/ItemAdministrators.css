@@ -1,0 +1,92 @@
+.card_administrators {
+    align-items: center;
+    background-color: #F2F3F4;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 0 15px 0;
+    min-height: 70px;
+    cursor: pointer;
+    user-select: none;
+    width: 1100px;
+}
+
+.card_administrators p {
+    display: inline-block;
+    color: #2C3E50;
+}
+
+.photo_administrators {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 3px solid #E5E7E9;
+    object-fit: cover;
+}
+
+.icon_active{
+    position: relative;
+    background-color: #17202A;
+    border-radius: 10%;
+    padding: 15px;
+    width: 50px;
+    height: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.tooltip_active {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.tooltip_active::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.icon_active:hover .tooltip_active {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+  
+.icon:hover span,
+.icon:hover .tooltip_active {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+  
+.facebook:hover,
+.facebook:hover .tooltip_active,
+.facebook:hover .tooltip_active::before {
+    background-color: #3b5999;
+    color: #ffffff;
+}
+  
+.icon_active .bx {
+    color: white;
+}

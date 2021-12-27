@@ -1,0 +1,5 @@
+.cards_administrators_grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

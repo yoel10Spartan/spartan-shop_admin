@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+
+.card__container_previus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 720px;
+    height: 550px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #2C3E50;
+    padding: 15px;
+}
+
+.card__container_previus .card_previus__header {
+    position: relative;
+    border: 1px dashed black;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card__container_previus .card_previus__header img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.card_previus__body p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.name__price {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    font-size: 10px;
+    margin-top: 20px;
+    color: #424949;
+    font-family: 'Staatliches', cursive;
+}
+
+.card_previus__body .price {
+    position: relative;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #273746;
+} 

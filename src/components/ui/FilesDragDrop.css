@@ -1,0 +1,47 @@
+.list_name__files {
+    display: none;
+  }
+  
+.drag_drop {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px dashed black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    padding: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 30px;
+    user-select: none;
+}
+  
+.drag_drop .bx {
+    margin-right: 5px;
+    font-size: 20px;
+} 
+
+.error__image {
+    border: 1px dashed red;
+}
+
+.container__btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.files_drag-drop {
+    margin-top: 10px;
+    margin: 15px 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.upload_images {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
